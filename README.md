@@ -14,13 +14,6 @@ and Structured Streaming for stream processing.
 [![PySpark Coverage](https://codecov.io/gh/apache/spark/branch/master/graph/badge.svg)](https://codecov.io/gh/apache/spark)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/pyspark?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads)](https://pypi.org/project/pyspark/)
 
-
-## Online Documentation
-
-You can find the latest Spark documentation, including a programming
-guide, on the [project web page](https://spark.apache.org/documentation.html).
-This README file only contains basic setup instructions.
-
 ## Building Spark
 
 Spark is built using [Apache Maven](https://maven.apache.org/).
