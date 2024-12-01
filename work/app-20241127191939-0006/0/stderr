@@ -1,0 +1,89 @@
+Spark Executor Command: "C:\Users\saivi\jdk1.8.0_431\bin\java" "-cp" "C:\Users\saivi\spark-3.5.3-bin-hadoop3\bin\..\conf\;C:\Users\saivi\spark-3.5.3-bin-hadoop3\jars\*" "-Xmx1024M" "-Dspark.driver.port=52372" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@10.0.0.225:52372" "--executor-id" "0" "--hostname" "10.0.0.225" "--cores" "12" "--app-id" "app-20241127191939-0006" "--worker-url" "spark://Worker@10.0.0.225:51837" "--resourceProfileId" "0"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/11/27 19:19:40 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 21608@Naruto
+24/11/27 19:19:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/11/27 19:19:40 INFO SecurityManager: Changing view acls to: saivi
+24/11/27 19:19:40 INFO SecurityManager: Changing modify acls to: saivi
+24/11/27 19:19:40 INFO SecurityManager: Changing view acls groups to: 
+24/11/27 19:19:40 INFO SecurityManager: Changing modify acls groups to: 
+24/11/27 19:19:40 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: saivi; groups with view permissions: EMPTY; users with modify permissions: saivi; groups with modify permissions: EMPTY
+24/11/27 19:19:41 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:52372 after 198 ms (0 ms spent in bootstraps)
+24/11/27 19:19:41 INFO SecurityManager: Changing view acls to: saivi
+24/11/27 19:19:41 INFO SecurityManager: Changing modify acls to: saivi
+24/11/27 19:19:41 INFO SecurityManager: Changing view acls groups to: 
+24/11/27 19:19:41 INFO SecurityManager: Changing modify acls groups to: 
+24/11/27 19:19:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: saivi; groups with view permissions: EMPTY; users with modify permissions: saivi; groups with modify permissions: EMPTY
+24/11/27 19:19:41 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:52372 after 1 ms (0 ms spent in bootstraps)
+24/11/27 19:19:41 INFO DiskBlockManager: Created local directory at C:\Users\saivi\AppData\Local\Temp\spark-4376d068-a51a-4325-b55c-5c939837567e\executor-bd958f4f-6ff9-4a50-b510-f42692acaa69\blockmgr-6afe15cb-d1ee-451a-99a2-b53f85b03362
+24/11/27 19:19:41 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/11/27 19:19:41 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@10.0.0.225:52372
+24/11/27 19:19:41 INFO WorkerWatcher: Connecting to worker spark://Worker@10.0.0.225:51837
+24/11/27 19:19:41 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:51837 after 2 ms (0 ms spent in bootstraps)
+24/11/27 19:19:41 INFO WorkerWatcher: Successfully connected to spark://Worker@10.0.0.225:51837
+24/11/27 19:19:41 INFO ResourceUtils: ==============================================================
+24/11/27 19:19:41 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/11/27 19:19:41 INFO ResourceUtils: ==============================================================
+24/11/27 19:19:41 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/11/27 19:19:41 INFO Executor: Starting executor ID 0 on host 10.0.0.225
+24/11/27 19:19:41 INFO Executor: OS info Windows 11, 10.0, x86
+24/11/27 19:19:41 INFO Executor: Java version 1.8.0_431
+24/11/27 19:19:41 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52502.
+24/11/27 19:19:41 INFO NettyBlockTransferService: Server created on 10.0.0.225:52502
+24/11/27 19:19:41 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/11/27 19:19:41 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.0.0.225, 52502, None)
+24/11/27 19:19:41 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.0.0.225, 52502, None)
+24/11/27 19:19:41 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.0.0.225, 52502, None)
+24/11/27 19:19:41 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/11/27 19:19:41 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@126d00c for default.
+24/11/27 19:20:44 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/11/27 19:20:44 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/11/27 19:20:44 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/11/27 19:20:44 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:52425 after 4 ms (0 ms spent in bootstraps)
+24/11/27 19:20:44 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.8 KiB, free 413.9 MiB)
+24/11/27 19:20:44 INFO TorrentBroadcast: Reading broadcast variable 0 took 167 ms
+24/11/27 19:20:44 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+24/11/27 19:20:44 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 13.4 KiB, free 413.9 MiB)
+24/11/27 19:20:45 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.io.IOException: Cannot run program "python3": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.createSimpleWorker(PythonWorkerFactory.scala:181)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:109)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:458)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:139)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 33 more

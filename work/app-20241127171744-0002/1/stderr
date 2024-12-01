@@ -1,0 +1,39 @@
+Spark Executor Command: "C:\Users\saivi\jdk1.8.0_431\bin\java" "-cp" "C:\Users\saivi\spark-3.5.3-bin-hadoop3\bin\..\conf\;C:\Users\saivi\spark-3.5.3-bin-hadoop3\jars\*" "-Xmx1024M" "-Dspark.driver.port=50726" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@10.0.0.225:50726" "--executor-id" "1" "--hostname" "10.0.0.225" "--cores" "6" "--app-id" "app-20241127171744-0002" "--worker-url" "spark://Worker@10.0.0.225:51720" "--resourceProfileId" "0"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/11/27 19:10:30 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 16688@Naruto
+24/11/27 19:10:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/11/27 19:10:30 INFO SecurityManager: Changing view acls to: saivi
+24/11/27 19:10:30 INFO SecurityManager: Changing modify acls to: saivi
+24/11/27 19:10:30 INFO SecurityManager: Changing view acls groups to: 
+24/11/27 19:10:30 INFO SecurityManager: Changing modify acls groups to: 
+24/11/27 19:10:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: saivi; groups with view permissions: EMPTY; users with modify permissions: saivi; groups with modify permissions: EMPTY
+24/11/27 19:10:31 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:50726 after 207 ms (0 ms spent in bootstraps)
+24/11/27 19:10:31 INFO SecurityManager: Changing view acls to: saivi
+24/11/27 19:10:31 INFO SecurityManager: Changing modify acls to: saivi
+24/11/27 19:10:31 INFO SecurityManager: Changing view acls groups to: 
+24/11/27 19:10:31 INFO SecurityManager: Changing modify acls groups to: 
+24/11/27 19:10:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: saivi; groups with view permissions: EMPTY; users with modify permissions: saivi; groups with modify permissions: EMPTY
+24/11/27 19:10:31 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:50726 after 1 ms (0 ms spent in bootstraps)
+24/11/27 19:10:31 INFO DiskBlockManager: Created local directory at C:\Users\saivi\AppData\Local\Temp\spark-2cf39bc5-021a-46f3-a0c4-8956fbd1f392\executor-0510b328-fa9f-41a9-9d26-9f6430a2bc4c\blockmgr-72e7f60f-bcdc-44d8-86eb-c7141c531661
+24/11/27 19:10:31 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/11/27 19:10:31 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@10.0.0.225:50726
+24/11/27 19:10:31 INFO WorkerWatcher: Connecting to worker spark://Worker@10.0.0.225:51720
+24/11/27 19:10:31 INFO TransportClientFactory: Successfully created connection to /10.0.0.225:51720 after 2 ms (0 ms spent in bootstraps)
+24/11/27 19:10:31 INFO WorkerWatcher: Successfully connected to spark://Worker@10.0.0.225:51720
+24/11/27 19:10:31 INFO ResourceUtils: ==============================================================
+24/11/27 19:10:31 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/11/27 19:10:31 INFO ResourceUtils: ==============================================================
+24/11/27 19:10:31 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/11/27 19:10:31 INFO Executor: Starting executor ID 1 on host 10.0.0.225
+24/11/27 19:10:31 INFO Executor: OS info Windows 11, 10.0, x86
+24/11/27 19:10:31 INFO Executor: Java version 1.8.0_431
+24/11/27 19:10:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51795.
+24/11/27 19:10:31 INFO NettyBlockTransferService: Server created on 10.0.0.225:51795
+24/11/27 19:10:31 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/11/27 19:10:31 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(1, 10.0.0.225, 51795, None)
+24/11/27 19:10:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(1, 10.0.0.225, 51795, None)
+24/11/27 19:10:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(1, 10.0.0.225, 51795, None)
+24/11/27 19:10:31 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/11/27 19:10:31 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@1fbaeb0 for default.
