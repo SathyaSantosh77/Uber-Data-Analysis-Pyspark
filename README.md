@@ -119,3 +119,6 @@ building for particular Hive and Hive Thriftserver distributions.
 
 Please review the [Contribution to Spark guide](https://spark.apache.org/contributing.html)
 for information on how to get started contributing to the project.
+
+NOTE:-!!!
+The above instructions are not necessarily works for every user...
