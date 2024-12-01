@@ -114,10 +114,6 @@ Please refer to the build documentation at
 for detailed guidance on building for a particular distribution of Hadoop, including
 building for particular Hive and Hive Thriftserver distributions.
 
-## Configuration
-
-Please refer to the [Configuration Guide](https://spark.apache.org/docs/latest/configuration.html)
-in the online documentation for an overview on how to configure Spark.
 
 ## Contributing
 
